@@ -42,7 +42,17 @@ let orders = [
 ];
 
 // Start coding here
-let isArray;
-let creditCardTypeOfBlindermann;
-let totalPurchaseOfJoannet;
-let totalPurchaseOfDary;
+let isArray = typeof orders;
+let creditCardTypeOfBlindermann = orders[2].creditCardType;
+creditCardTypeOfBlindermann = "visa";
+
+let totalPurchaseOfJoannet = orders[3].productQuantity;
+let totalPurchaseOfDary = orders[1].productPrice * orders[1].productQuantity;
+
+delete orders[0];
+
+console.log(isArray);
+console.log(creditCardTypeOfBlindermann);
+console.log(totalPurchaseOfJoannet);
+console.log(totalPurchaseOfDary);
+console.log(orders);
